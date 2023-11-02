@@ -17,9 +17,10 @@ def generate_launch_description():
         "model",
         default_value=os.path.join(
             get_package_share_directory("mycobot_description"),
-            "urdf/mycobot_pi/mycobot_urdf.urdf"
+            "urdf/600_urdf/mycobot_600_urdf.urdf"
         )
     )
+    # mycobot_ros2/mycobot_description/urdf/600_urdf/mycobot_600_urdf.urdf
     res.append(model_launch_arg)
 
     rvizconfig_launch_arg = DeclareLaunchArgument(
